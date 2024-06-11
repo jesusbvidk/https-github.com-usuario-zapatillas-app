@@ -1,0 +1,138 @@
+ht<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proyecto"
+        tools:targetApi="31">
+        <activity
+            android:name=".adidasCAMPUSYouthOfParis"
+            android:exported="false" />
+        <activity
+            android:name=".adidasCAMPUS80s"
+            android:exported="false" />
+        <activity
+            android:name=".adidasCAMPUSADV"
+            android:exported="false" />
+        <activity
+            android:name=".adidasCAMPUS00s"
+            android:exported="false" />
+        <activity
+            android:name=".Buscar"
+            android:exported="false" />
+        <activity
+            android:name=".nikeBLAZERmenu"
+            android:exported="false" />
+        <activity
+            android:name=".nikePHANTOMmenu"
+            android:exported="false" />
+        <activity
+            android:name=".nikeJORDAN1menu"
+            android:exported="false" />
+        <activity
+            android:name=".nikeAIRFORCEMAXmenu"
+            android:exported="false" />
+        <activity
+            android:name=".nikeAIRFORCE1menu"
+            android:exported="false" />
+        <activity
+            android:name=".nikeDUNKmenu"
+            android:exported="false" />
+        <activity
+            android:name=".conversePlataformamenu"
+            android:exported="false" />
+        <activity
+            android:name=".converseBajamenu"
+            android:exported="false" />
+        <activity
+            android:name=".converseAltamenu"
+            android:exported="false" />
+        <activity
+            android:name=".adidasSAMBAmenu"
+            android:exported="false" />
+        <activity
+            android:name=".adidasCAMPUSmenu"
+            android:exported="false" />
+        <activity
+            android:name=".adidasFORUMmenu"
+            android:exported="false" />
+        <activity
+            android:name=".adidasDURAMOmenu"
+            android:exported="false" />
+        <activity
+            android:name=".adidasULTRABOOSTmenu"
+            android:exported="false" />
+        <activity
+            android:name=".adidasGAZELLEmenu"
+            android:exported="false" />
+        <activity
+            android:name=".pumaSUEDEmenu"
+            android:exported="false" />
+        <activity
+            android:name=".pumaPALERMOmenu"
+            android:exported="false" />
+        <activity
+            android:name=".pumaNITROTMmenu"
+            android:exported="false" />
+        <activity
+            android:name=".pumaCAPROmenu"
+            android:exported="false" />
+        <activity
+            android:name=".pumaRAIDERmenu"
+            android:exported="false" />
+        <activity
+            android:name=".pumaRSXmenu"
+            android:exported="false" />
+        <activity
+            android:name=".Puma"
+            android:exported="false" />
+        <activity
+            android:name=".Nike"
+            android:exported="false" />
+        <activity
+            android:name=".Converse"
+            android:exported="false" />
+        <activity
+            android:name=".Adidas"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroUsuario"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>tps://github.com/jesusbvidk/https-github.com-usuario-zapatillas-app.git
