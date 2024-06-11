@@ -1,0 +1,102 @@
+package com.example.proyecto;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class Adidas extends AppCompatActivity {
+
+    ImageButton btnRegresaradmn, btnGazellead, btnUltraboostad, btnDuramoad, btnForumad, btnCampusad, btnSambaad, btnBuscar;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_adidas);
+
+        btnBuscar = (android.widget.ImageButton) findViewById(R.id.btnBuscar);
+        btnBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this, Buscar.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnGazellead = (android.widget.ImageButton) findViewById(R.id.btnGazellead);
+        btnGazellead.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,adidasGAZELLEmenu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnUltraboostad = (android.widget.ImageButton) findViewById(R.id.btnUltraboostad);
+        btnUltraboostad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,adidasULTRABOOSTmenu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnDuramoad = (android.widget.ImageButton) findViewById(R.id.btnDuramoad);
+        btnDuramoad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,adidasDURAMOmenu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnForumad = (android.widget.ImageButton) findViewById(R.id.btnForumad);
+        btnForumad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,adidasFORUMmenu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnCampusad = (android.widget.ImageButton) findViewById(R.id.btnCampusad);
+        btnCampusad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,adidasCAMPUSmenu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnSambaad = (android.widget.ImageButton) findViewById(R.id.btnSambaad);
+        btnSambaad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,adidasSAMBAmenu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        btnRegresaradmn = (android.widget.ImageButton)findViewById(R.id.btnRegresaradmn);
+        btnRegresaradmn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentReg = new Intent(Adidas.this,Menu.class);
+                Adidas.this.startActivity(intentReg);
+            }
+        });
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+}
